@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f858880a6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+ <div>
+  <strong class="heading-title">Simon</strong>
+  <a class="fa-solid fa-circle-question fa-2x about-icon" onclick="document.getElementById('id01').style.display='block'"></a>
+  <div id="id01" class="modal">
+
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h2>Simon</h2>
+      </div>
+
+      <div class="container">
+        <p class="popup-text">
+        Welcome to the online version of the classic Simon game! If you're not familiar with Simon, it's a game of memory and skill that was first introduced in 1978 as an electronic toy. This website simulates the physical game using HTML, CSS, and JavaScript to create an interactive and engaging experience that will test your memory and reaction time.</p>
+        <p class="popup-text">The game consists of four colored buttons - green, red, yellow, and blue - that light up and play a specific sound when pressed. Simon generates a random sequence of tones by lighting up the buttons in a particular order, which you must then replicate by clicking on the buttons in the same order. Each time you correctly repeat the sequence, the game adds one additional tone to the sequence, making it longer and more challenging.
+        </p>
+        <p class="popup-text">You'll need to pay close attention to the sequence and respond quickly to keep up with the increasing difficulty. One mistake and the game is over! Are you up for the challenge? Click the start button or press any key to begin playing and see how far you can get!</p>
+  
+      </div>
+      <div class="container">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 id="level-title">Press Any Key Or Click On Start To Start The Game</h1>
+  <div><button id='start' class="start-button">Start</button></div>
+  <div class="row">
+    <div type="button" id="green" class="btn green">
+    </div>
+    <span>
+      <div type="button" id="red" class="btn red">
+      </div>
+    </span>
+  </div>
+  <div class="row">
+    <div type="button" id="yellow" class="btn yellow">
+    </div>
+    <span>
+      <div type="button" id="blue" class="btn blue">
+      </div>
+    </span>
+  </div>
+</div>
+  <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
